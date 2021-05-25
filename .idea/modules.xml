@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JFF_Plus.iml" filepath="$PROJECT_DIR$/.idea/modules/JFF_Plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/JFF_Plus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/JFF_Plus.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/JFF_Plus.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/JFF_Plus.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/favorite/JFF_Plus.favorite.iml" filepath="$PROJECT_DIR$/.idea/modules/favorite/JFF_Plus.favorite.iml" />
+    </modules>
+  </component>
+</project>

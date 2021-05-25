@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-reactivestreams-ktx:2.3.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b983ca06c18dbe7cd3972f30708d9b01/jetified-lifecycle-reactivestreams-ktx-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a96cbf12b7c6b707d8f1b8c2c57e66d/jetified-lifecycle-reactivestreams-ktx-2.3.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/043a3e0f2eee9dca50c1a04c1a2f7696/jetified-lifecycle-reactivestreams-ktx-2.3.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a96cbf12b7c6b707d8f1b8c2c57e66d/jetified-lifecycle-reactivestreams-ktx-2.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a96cbf12b7c6b707d8f1b8c2c57e66d/jetified-lifecycle-reactivestreams-ktx-2.3.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-reactivestreams-ktx/2.3.1/23c53fd2626cac61baac62c95dec1c49046e0261/lifecycle-reactivestreams-ktx-2.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
