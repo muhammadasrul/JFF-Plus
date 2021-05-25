@@ -14,6 +14,8 @@ import com.asrul.jffplus.core.data.Resource
 import com.asrul.jffplus.core.domain.model.Data
 import com.asrul.jffplus.core.ui.TvShowAdapter
 import com.asrul.jffplus.core.utils.ItemClickCallbackListener
+import com.asrul.jffplus.core.utils.setGone
+import com.asrul.jffplus.core.utils.setVisible
 import com.asrul.jffplus.databinding.FragmentTvShowBinding
 import com.asrul.jffplus.ui.detail.DetailActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,14 +43,15 @@ class TvShowFragment : Fragment() {
         viewModel.tvShow.observe(viewLifecycleOwner, { tvShow ->
             if (tvShow != null) {
                 when(tvShow) {
-                    is Resource.Loading -> binding.progressBar.visibility = View.VISIBLE
+                    is Resource.Loading -> binding.progressBar.setVisible()
                     is Resource.Success -> {
-                        binding.progressBar.visibility = View.GONE
+                        binding.progressBar.setGone()
                         tvShowAdapter.setTvShow(tvShow.data)
+                        binding.tvEmpty.setGone()
                         tvShowAdapter.notifyDataSetChanged()
                     }
                     is Resource.Error -> {
-                        binding.progressBar.visibility = View.GONE
+                        binding.progressBar.setGone()
                         Toast.makeText(requireContext(), getString(R.string.terjadi_kesalahan), Toast.LENGTH_SHORT).show()
                     }
                 }

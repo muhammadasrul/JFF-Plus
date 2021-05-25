@@ -12,6 +12,5 @@ import dagger.hilt.android.components.ApplicationComponent
 abstract class AppModule {
 
     @Binds
-//    @ViewModelScoped
     abstract fun provideDataUseCase(dataInteractor: DataInteractor): DataUseCase
 }

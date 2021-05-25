@@ -2,6 +2,8 @@ package com.asrul.jffplus.favorite
 
 import android.content.Context
 import com.asrul.jffplus.di.FavoriteModuleDependencies
+import com.asrul.jffplus.favorite.ui.movie.FavMovieFragment
+import com.asrul.jffplus.favorite.ui.tvshow.FavTvShowFragment
 import dagger.BindsInstance
 import dagger.Component
 

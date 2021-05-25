@@ -1,4 +1,4 @@
-package com.asrul.jffplus.favorite
+package com.asrul.jffplus.favorite.ui.tvshow
 
 import android.content.Context
 import android.content.Intent
@@ -12,8 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.asrul.jffplus.core.domain.model.Data
 import com.asrul.jffplus.core.ui.TvShowAdapter
 import com.asrul.jffplus.core.utils.ItemClickCallbackListener
+import com.asrul.jffplus.core.utils.setGone
 import com.asrul.jffplus.databinding.FragmentTvShowBinding
 import com.asrul.jffplus.di.FavoriteModuleDependencies
+import com.asrul.jffplus.favorite.DaggerFavoriteComponent
+import com.asrul.jffplus.favorite.ui.ViewModelFactory
 import com.asrul.jffplus.ui.detail.DetailActivity
 import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject
@@ -55,7 +58,8 @@ class FavTvShowFragment : Fragment() {
         val tvShowAdapter = TvShowAdapter()
         viewModel.favoriteTvShow.observe(viewLifecycleOwner, { tvShow ->
             tvShowAdapter.setTvShow(tvShow)
-            binding.progressBar.visibility = View.GONE
+            binding.progressBar.setGone()
+            if (tvShow.isNotEmpty()) binding.tvEmpty.setGone()
         })
 
         binding.rvTvShow.apply {

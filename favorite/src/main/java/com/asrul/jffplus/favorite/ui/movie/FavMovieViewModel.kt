@@ -1,4 +1,4 @@
-package com.asrul.jffplus.favorite
+package com.asrul.jffplus.favorite.ui.movie
 
 import androidx.lifecycle.LiveDataReactiveStreams
 import androidx.lifecycle.ViewModel

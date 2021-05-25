@@ -18,7 +18,7 @@ class SectionPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAV
         fragments.add(fragment)
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
+    override fun getPageTitle(position: Int): CharSequence {
         return tabTitle[position]
     }
 }

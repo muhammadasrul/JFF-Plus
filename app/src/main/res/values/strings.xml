@@ -23,4 +23,6 @@
     <string name="language">Language</string>
     <string name="change_language">Change Language</string>
     <string name="setting">Settings</string>
+    <string name="empty_movie">Nothing in Favorite Movie!</string>
+    <string name="empty_tv_show">Nothing in Favorite TV Show!</string>
 </resources>

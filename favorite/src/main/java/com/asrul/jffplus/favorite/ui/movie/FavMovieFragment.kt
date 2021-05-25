@@ -1,4 +1,4 @@
-package com.asrul.jffplus.favorite
+package com.asrul.jffplus.favorite.ui.movie
 
 import android.content.Context
 import android.content.Intent
@@ -12,8 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.asrul.jffplus.core.domain.model.Data
 import com.asrul.jffplus.core.ui.MovieAdapter
 import com.asrul.jffplus.core.utils.ItemClickCallbackListener
+import com.asrul.jffplus.core.utils.setGone
 import com.asrul.jffplus.databinding.FragmentMovieBinding
 import com.asrul.jffplus.di.FavoriteModuleDependencies
+import com.asrul.jffplus.favorite.DaggerFavoriteComponent
+import com.asrul.jffplus.favorite.ui.ViewModelFactory
 import com.asrul.jffplus.ui.detail.DetailActivity
 import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject
@@ -58,7 +61,8 @@ class FavMovieFragment : Fragment() {
         val movieAdapter = MovieAdapter()
         viewModel.favoriteMovie.observe(viewLifecycleOwner, { movie ->
             movieAdapter.setMovies(movie)
-            binding.progressBar.visibility = View.GONE
+            binding.progressBar.setGone()
+            if (movie.isNotEmpty()) binding.tvEmpty.setGone()
         })
         binding.rvMovie.apply {
             layoutManager = LinearLayoutManager(context)

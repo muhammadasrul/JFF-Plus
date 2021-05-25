@@ -1,9 +1,11 @@
-package com.asrul.jffplus.favorite
+package com.asrul.jffplus.favorite.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.asrul.jffplus.core.utils.SectionPagerAdapter
 import com.asrul.jffplus.favorite.databinding.ActivityFavoriteBinding
+import com.asrul.jffplus.favorite.ui.movie.FavMovieFragment
+import com.asrul.jffplus.favorite.ui.tvshow.FavTvShowFragment
 
 class FavoriteActivity : AppCompatActivity() {
 
