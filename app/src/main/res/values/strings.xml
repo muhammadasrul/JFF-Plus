@@ -16,6 +16,11 @@
     <string name="release_date">Release Date</string>
     <string name="popularity">Popularity</string>
     <string name="vote_count">Vote Count</string>
-    <string name="terjadi_kesalahan">Terjadi kesalahan</string>
+    <string name="terjadi_kesalahan">Something went wrong</string>
     <string name="title_favorite">Favorite</string>
+
+    <string name="setting_title">Basic Settings</string>
+    <string name="language">Language</string>
+    <string name="change_language">Change Language</string>
+    <string name="setting">Settings</string>
 </resources>

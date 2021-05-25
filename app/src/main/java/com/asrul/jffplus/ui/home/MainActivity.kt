@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.asrul.jffplus.R
 import com.asrul.jffplus.databinding.ActivityMainBinding
-import com.asrul.jffplus.ui.favorite.FavoriteFragment
+import com.asrul.jffplus.ui.settings.SettingsFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -34,11 +34,9 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId) {
                 R.id.home_nav -> {
                     loadFragment(HomeFragment())
-                    supportActionBar?.title = resources.getString(R.string.app_full_name)
                 }
-                R.id.favorite_nav -> {
-                    loadFragment(FavoriteFragment())
-                    supportActionBar?.title = resources.getString(R.string.favorite)
+                R.id.setting_nav -> {
+                    loadFragment(SettingsFragment())
                 }
             }
             true

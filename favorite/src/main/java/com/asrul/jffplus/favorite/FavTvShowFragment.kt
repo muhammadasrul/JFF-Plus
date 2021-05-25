@@ -55,7 +55,7 @@ class FavTvShowFragment : Fragment() {
         val tvShowAdapter = TvShowAdapter()
         viewModel.favoriteTvShow.observe(viewLifecycleOwner, { tvShow ->
             tvShowAdapter.setTvShow(tvShow)
-            binding.progressBar.visibility = if (tvShow.isNotEmpty()) View.GONE else View.VISIBLE
+            binding.progressBar.visibility = View.GONE
         })
 
         binding.rvTvShow.apply {

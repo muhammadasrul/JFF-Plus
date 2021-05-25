@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.asrul.jffplus.R
 import com.asrul.jffplus.core.data.Resource
 import com.asrul.jffplus.core.domain.model.Data
 import com.asrul.jffplus.core.ui.MovieAdapter
@@ -47,11 +48,7 @@ class MovieFragment : Fragment() {
                     }
                     is Resource.Error -> {
                         binding.progressBar.visibility = View.GONE
-                        Toast.makeText(
-                            requireContext(),
-                            "Oops something went wrong",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(requireContext(), getString(R.string.terjadi_kesalahan), Toast.LENGTH_SHORT).show()
                     }
                 }
             }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JFF Plus</string>
+    <string name="app_full_name">JFF Plus: Festival Daring</string>
+    <string name="movie">Film</string>
+    <string name="tvShow">Acara TV</string>
+    <string name="carouselimg">carouselImg</string>
+    <string name="backfab">backFAB</string>
+    <string name="backdropimg">backdropImg</string>
+    <string name="posterimg">posterImg</string>
+    <string name="overview">Kilasan Singkat</string>
+    <string name="jff_logo">jff logo</string>
+    <string name="home">Beranda</string>
+    <string name="favorite">Favorit</string>
+    <string name="add_to_favorite">Ditambahkan ke favorit</string>
+    <string name="remove_from_favorite">Dihapus dari favorit</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="popularity">Popularitas</string>
+    <string name="vote_count">Penilaian</string>
+    <string name="terjadi_kesalahan">Terjadi kesalahan</string>
+    <string name="title_favorite">Favorit</string>
+
+    <string name="setting_title">Pengaturan Dasar</string>
+    <string name="language">Bahasa</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="setting">Pengaturan</string>
+</resources>

@@ -58,7 +58,7 @@ class FavMovieFragment : Fragment() {
         val movieAdapter = MovieAdapter()
         viewModel.favoriteMovie.observe(viewLifecycleOwner, { movie ->
             movieAdapter.setMovies(movie)
-            binding.progressBar.visibility = if (movie.isNotEmpty()) View.GONE else View.VISIBLE
+            binding.progressBar.visibility = View.GONE
         })
         binding.rvMovie.apply {
             layoutManager = LinearLayoutManager(context)
