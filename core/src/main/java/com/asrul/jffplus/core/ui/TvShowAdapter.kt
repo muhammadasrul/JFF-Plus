@@ -13,7 +13,7 @@ import com.asrul.jffplus.core.utils.ItemClickCallbackListener
 
 class TvShowAdapter: RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
 
-    var listTvShow = ArrayList<Data>()
+    private var listTvShow = ArrayList<Data>()
     private lateinit var itemClickCallbackListener: ItemClickCallbackListener
 
     fun setOnItemClickCallback(itemClickCallbackListener: ItemClickCallbackListener) {
@@ -24,6 +24,7 @@ class TvShowAdapter: RecyclerView.Adapter<TvShowAdapter.TvShowViewHolder>() {
         if (tvShows == null) return
             this.listTvShow.clear()
             this.listTvShow.addAll(tvShows)
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TvShowViewHolder {
